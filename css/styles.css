@@ -41,33 +41,40 @@ nav a {
 .galleryOkapi {
     overflow-x: scroll;
     overflow-y: hidden;
+    color: white;
 }
 
 .galleryKomodo {
     overflow-x: scroll;
     overflow-y: hidden;
+    color: white;
 }
 
 .gallerySun {
     overflow-x: scroll;
     overflow-y: hidden;
+    color: white;
 }
 
 .galleryStand {
     overflow-x: scroll;
     overflow-y: hidden;
+    color: white;
 }
 
 .galleryGiant {
     overflow-x: scroll;
     overflow-y: hidden;
+    color: white;
 }
 
 .gallerySpider {
     overflow-x: scroll;
     overflow-y: hidden;
+    color: white;   
 }
 
 .footer {
     border: 100px solid black;
+    
 }

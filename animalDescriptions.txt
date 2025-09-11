@@ -24,3 +24,7 @@ Tripod Fish:
     The Tripod Fish waits on the ocean floor for food to come to it.
     It uses its long fin rays to knock fish that could be floating by into it's mouth.
     Tripod Fish can produce both eggs, and sperm, making it capable of reproducing entirely on it's on.
+
+    Peacock Spider:
+        The Peacock Spider can see the full visible range of light, as well as the ultraviolet range.
+        If the male continues to dance for an uninterested partner she will attempt to kill him.
