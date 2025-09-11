@@ -10,43 +10,91 @@
 </head>
 <body>
     <div class="galleryMain">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Animal form</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </nav>
         <div class="galleryOkapi">
             <img src="images/ConfusedGiraffeResize.jpg" alt="">
             <img src="images/OkapiTwoResize.jpg" alt="">
             <img src="images/OkapiThreeResize.jpg" alt="">
             <img src="images/OkapiFourResize.jpg" alt="">
+            <img src="images/OkapiFiveResize.jpg" alt="">
         </div>
         <div class="galleryKomodo">
             <img src="images/ForbbidenPuppyResize.jpg" alt="">
             <img src="images/KomodoTwoResize.jpg" alt="">
             <img src="images/KomodoThreeResize.jpg" alt="">
             <img src="images/KomodoFourResize.jpg" alt="">
+            <img src="images/KomodoFiveResize.jpg" alt="">
         </div>
         <div class="gallerySun">
             <img src="images/ForgottenTurkeyLegResize.jpg" alt="">
             <img src="images/SunTwoResize.jpg" alt="">
             <img src="images/SunThreeResize.jpg" alt="">
             <img src="images/SunFourResize.jpg" alt="">
+            <img src="images/SunFiveResize.jpg" alt="">
         </div>
         <div class="galleryStand">
             <img src="images/StandingFishResize.jpg" alt="">
             <img src="images/StandTwoResize.jpg" alt="">
             <img src="images/StandThreeResize.png" alt="">
             <img src="images/StandFourResize.jpg" alt="">
+            <img src="images/StandFiveResize.png" alt="">
         </div>
         <div class="galleryGiant">
             <img src="images/WrinkledBeefJerkyResize.jpg" alt="">
             <img src="images/GiantTwoResize.jpg" alt="">
             <img src="images/GiantThreeResize.jpg" alt="">
             <img src="images/GiantFourResize.jpg" alt="">
+            <img src="images/" alt="">
         </div>
         <div class="gallerySpider">
             <img src="images/RainbowGuyResize.jpg" alt="">
             <img src="images/SpiderTwoResize.jpg" alt="">
             <img src="images/SpiderThreeResize.jpg" alt="">
             <img src="images/SpiderFourResize.jpg" alt="">
+            <img src="images/SpiderFiveResize.jpg" alt="">
         </div>
     </div>
+
+    <script>
+        const slider = document.querySelector('.galleryOkapi')
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('mouseleave',() => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('mouseup',   () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = x - startX;
+            slider.scrollLeft = scrollLeft - walk;
+        });
+
+    </script>
+
     <div class="footer">
     </div>
 </body>
