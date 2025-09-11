@@ -1,14 +1,37 @@
-body {
-    background: black;
+.galleryMain { 
+    white-space: nowrap;
 }
 
-.gallery {
-    display: grid;
-    grid-gap: 10px;
+.galleryOkapi {
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
-.gallery img {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 5px;
+.galleryKomodo {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.gallerySun {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.galleryStand {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.galleryGiant {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.gallerySpider {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.footer {
+    border: 100px solid black;
 }
